@@ -22,7 +22,7 @@ export const HeaderMenu = () => {
         <Menu>
           <li><Link to="/">Home</Link></li>
           <li><Link to="/sobre">Sobre</Link></li>
-          <li><Link to="/">Coach</Link></li>
+          <li><Link to="/coach">Coach</Link></li>
           <li><Link to="/">Meu propósito</Link></li>
           <li><Link to="/">Depoimentos</Link></li>
           <li><Link to="/">Contato</Link></li>
