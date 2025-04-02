@@ -1,5 +1,5 @@
 import { BrowserRouter as Router } from "react-router-dom"
-import { AppRoutes } from "./components/routers"
+import { AppRoutes } from "./routers"
 import { createGlobalStyle } from "styled-components";
 import { ThemeProvider } from "./themes/theme-context"
 
@@ -31,6 +31,9 @@ const GlobalStyled = createGlobalStyle`
   a{
     text-decoration: none;
     color: ${({ theme }) => theme.colors.color};
+  }
+  body{
+    background-color: ${({ theme }) => theme.colors.bg};
   }
 `;
 

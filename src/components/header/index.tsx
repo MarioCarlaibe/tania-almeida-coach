@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { FaInstagram, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { AnimatedButton } from "../../themes/button"
+import { Link } from "react-router-dom";
 
 export const HeaderMenu = () => {
   return (
@@ -19,12 +20,12 @@ export const HeaderMenu = () => {
           </div>
         </Label>
         <Menu>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Coach</a></li>
-          <li><a href="#">Meu propósito</a></li>
-          <li><a href="#">Depoimentos</a></li>
-          <li><a href="#">Contato</a></li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/sobre">Sobre</Link></li>
+          <li><Link to="/">Coach</Link></li>
+          <li><Link to="/">Meu propósito</Link></li>
+          <li><Link to="/">Depoimentos</Link></li>
+          <li><Link to="/">Contato</Link></li>
           <Button><AnimatedButton /></Button>
         </Menu>
       </nav>
@@ -132,7 +133,6 @@ const Menu = styled.ul`
     transition: 0.3s ease-out;
     &:hover{
       background-color: ${({ theme }) => theme.colors.bgInvert};
-      box-shadow: 0 0 30px 10px ${({ theme }) => theme.colors.bgInvert};
       color: ${({ theme }) => theme.colors.colorInvert};
     }
   }
