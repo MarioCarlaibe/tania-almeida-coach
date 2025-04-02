@@ -24,7 +24,7 @@ export const HeaderMenu = () => {
           <li><Link to="/sobre">Sobre</Link></li>
           <li><Link to="/coach">Coach</Link></li>
           <li><Link to="/purpose">Meu propósito</Link></li>
-          <li><Link to="/">Depoimentos</Link></li>
+          <li><Link to="/testimony">Depoimentos</Link></li>
           <li><Link to="/">Contato</Link></li>
           <Button><AnimatedButton /></Button>
         </Menu>

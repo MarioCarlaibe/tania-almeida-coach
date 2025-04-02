@@ -3,6 +3,7 @@ import { Home } from "../pages/home";
 import { About } from "../pages/about"
 import { Coach } from "../pages/coach"
 import { Purpose } from "../pages/purpose"
+import { Testimony } from "../pages/testimony"
 
 export function AppRoutes() {
     return(
@@ -11,6 +12,7 @@ export function AppRoutes() {
             <Route path="/sobre" element={<About />}/>
             <Route path="/coach" element={<Coach />}/>
             <Route path="/purpose" element={<Purpose />}/>
+            <Route path="/testimony" element={<Testimony />}/>
         </Routes>
     )
 }
