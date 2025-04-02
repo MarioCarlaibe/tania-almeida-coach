@@ -23,7 +23,7 @@ export const HeaderMenu = () => {
           <li><Link to="/">Home</Link></li>
           <li><Link to="/sobre">Sobre</Link></li>
           <li><Link to="/coach">Coach</Link></li>
-          <li><Link to="/">Meu propósito</Link></li>
+          <li><Link to="/purpose">Meu propósito</Link></li>
           <li><Link to="/">Depoimentos</Link></li>
           <li><Link to="/">Contato</Link></li>
           <Button><AnimatedButton /></Button>
