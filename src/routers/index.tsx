@@ -1,18 +1,15 @@
 import { Route, Routes } from "react-router-dom";
-import { Home } from "../pages/home";
-import { About } from "../pages/about"
-import { Coach } from "../pages/coach"
-import { Purpose } from "../pages/purpose"
-import { Testimony } from "../pages/testimony"
+import { Home, About, Coach, Purpose, Testimony, Contact } from "../pages";
 
 export function AppRoutes() {
-    return(
-        <Routes>
-            <Route path="/" element={<Home />}/>
-            <Route path="/sobre" element={<About />}/>
-            <Route path="/coach" element={<Coach />}/>
-            <Route path="/purpose" element={<Purpose />}/>
-            <Route path="/testimony" element={<Testimony />}/>
-        </Routes>
-    )
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/sobre" element={<About />} />
+      <Route path="/coach" element={<Coach />} />
+      <Route path="/purpose" element={<Purpose />} />
+      <Route path="/testimony" element={<Testimony />} />
+      <Route path="/contact" element={<Contact />} />
+    </Routes>
+  );
 }

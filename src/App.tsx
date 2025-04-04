@@ -1,11 +1,9 @@
-import { BrowserRouter as Router } from "react-router-dom"
-import { AppRoutes } from "./routers"
+import { BrowserRouter as Router } from "react-router-dom";
+import { AppRoutes } from "./routers";
 import { createGlobalStyle } from "styled-components";
-import { ThemeProvider } from "./themes/theme-context"
+import { ThemeProvider } from "./themes/theme-context";
 
 function App() {
-  
-
   return (
     <ThemeProvider>
       <Router>
@@ -13,7 +11,7 @@ function App() {
         <AppRoutes />
       </Router>
     </ThemeProvider>
-  )
+  );
 }
 const GlobalStyled = createGlobalStyle`
   *{
@@ -34,7 +32,8 @@ const GlobalStyled = createGlobalStyle`
   }
   body{
     background-color: ${({ theme }) => theme.colors.bg};
+    color: ${({ theme }) => theme.colors.color};
   }
 `;
 
-export default App
+export default App;
