@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import coverMain from "../../assets/cover-main.jpg";
 import coachImg from "../../assets/coach.jpg";
-import disc from "../../assets/DISC.png";
+import disc from "../../assets/disc.png";
 import { FadeInSection } from "../framer-motion";
 
 export const MainCover = () => {
