@@ -1,5 +1,6 @@
 export const themes = {
   light: {
+    title: "light",
     colors: {
       bg: "#f4f4f3",
       bgInvert: "#dcdcdc",
@@ -26,6 +27,7 @@ export const themes = {
     },
   },
   dark: {
+    title: "dark",
     colors: {
       bg: "#383838",
       bgInvert: "#1c1c1c",

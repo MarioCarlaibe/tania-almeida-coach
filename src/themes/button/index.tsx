@@ -6,11 +6,12 @@ import cloudopacity from "../../assets/cloudopacity.svg";
 import stars from "../../assets/stars.svg";
 
 export const AnimatedButton = () => {
-  const { toggleTheme } = useContext(ThemeContext);
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  const isDark = theme.title === "dark";
   return (
     <>
       <Switch htmlFor="switch">
-        <input type="checkbox" id="switch" onClick={toggleTheme} />
+        <input type="checkbox" id="switch" onChange={toggleTheme} checked={isDark} />
         <Sunmoon>
           <DarkSide />
         </Sunmoon>
