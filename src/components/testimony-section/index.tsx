@@ -4,7 +4,6 @@ import testimonyThree from "../../assets/depoiment-3.png";
 import testimonyFour from "../../assets/depoiment-4.png";
 import testimonyFive from "../../assets/depoiment-5.png";
 import styled from "styled-components";
-import { FadeInSection } from "../framer-motion";
 import { FaStar } from "react-icons/fa";
 
 export const TestimonySection = () => {
