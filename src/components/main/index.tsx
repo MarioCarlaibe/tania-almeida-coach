@@ -149,7 +149,7 @@ const Coach = styled.article`
     border-radius: 15px;
   }
   & div {
-    width: 500px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -157,6 +157,14 @@ const Coach = styled.article`
     text-align: center;
     & h2 {
       width: 300px;
+    }
+  }
+  @media (max-width: 1000px){
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    & div{
+      gap: 30px;
     }
   }
 `;
@@ -173,7 +181,18 @@ const Article = styled.article`
     justify-content: center;
     text-align: center;
     gap: 20px;
-    width: 500px;
+    max-width: 500px;
+  }
+  @media (max-width: 1000px){
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    & img {
+    width: 300px;
+    }
+  }
+  @media (max-width: 768px){
+    padding: 30px 20px;
   }
 `;
 const Profile = styled.section`
@@ -189,5 +208,8 @@ const Profile = styled.section`
     border-radius: 15px;
     box-shadow: 0 0 5px 2px ${({ theme }) => theme.colors.colorInvert};
     background-color: ${({ theme }) => theme.colors.bg};
+  }
+  @media (max-width: 1000px){
+    flex-wrap: wrap;
   }
 `;

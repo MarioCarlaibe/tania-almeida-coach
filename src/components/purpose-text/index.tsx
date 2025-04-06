@@ -5,9 +5,9 @@ import { FadeInSection } from "../framer-motion";
 export const PurposeSection = () => {
   return (
     <>
-      <FadeInSection>
         <Section>
           <img src={purpose} alt="Photo purpose" />
+          <FadeInSection>
           <div>
             <h2>Meu Propósito</h2>
             <section>
@@ -57,8 +57,8 @@ export const PurposeSection = () => {
               </p>
             </section>
           </div>
+          </FadeInSection>
         </Section>
-      </FadeInSection>
     </>
   );
 };
@@ -66,7 +66,7 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 70px 0 50px;
+  padding: 70px 0 0;
   & img {
     width: 1280px;
     border-radius: 15px;

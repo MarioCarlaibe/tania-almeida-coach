@@ -10,7 +10,6 @@ import { FaStar } from "react-icons/fa";
 export const TestimonySection = () => {
   return (
     <>
-      <FadeInSection>
         <Article>
           <div>
             <img src={testimonyOne} alt="Photo Client" />
@@ -112,7 +111,6 @@ export const TestimonySection = () => {
             </section>
           </div>
         </Article>
-      </FadeInSection>
     </>
   );
 };
@@ -131,8 +129,8 @@ const Article = styled.article`
     align-items: center;
     text-align: center;
     gap: 50px;
-    width: 1000px;
-    height: 400px;
+    max-width: 1000px;
+    min-height: 400px;
     padding: 50px;
     & img {
       width: 150px;
@@ -142,6 +140,15 @@ const Article = styled.article`
     }
     & section p {
       margin-top: 30px;
+    }
+  }
+  @media (max-width: 1000px){
+    padding: 50px 20px 20px;
+  }
+  @media (max-width: 768px){
+    & div{
+      flex-direction: column;
+      padding: 50px 20px;
     }
   }
 `;

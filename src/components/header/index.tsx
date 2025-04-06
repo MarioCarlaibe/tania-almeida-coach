@@ -8,10 +8,10 @@ export const HeaderMenu = () => {
     <Header>
       <h1>Tânia Almeida</h1>
       <Icons>
-        <a href="">
+        <a href="#">
           <FaInstagram />
         </a>
-        <a href="">
+        <a href="#">
           <FaEnvelope />
         </a>
         <a href="https://wa.me/5516990909090">
@@ -213,5 +213,11 @@ const Icons = styled.div`
     &:hover {
       transform: scale(1.2);
     }
+  }
+  @media (max-width: 1000px){
+    position: relative;
+    justify-content: center;
+    top: 0;
+    left: 0;
   }
 `;

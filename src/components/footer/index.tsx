@@ -39,10 +39,10 @@ export const FooterMenu = () => {
           </Contact>
           <Links>
             <Icons>
-              <a href="">
+              <a href="#">
                 <FaInstagram />
               </a>
-              <a href="">
+              <a href="#">
                 <FaEnvelope />
               </a>
               <a href="https://wa.me/5516990909090">
@@ -68,8 +68,13 @@ const Footer = styled.footer`
   display: flex;
   justify-content: center;
   gap: 60px;
-  height: 280px;
+  min-height: 280px;
   padding: 30px;
+  @media (max-width: 1000px){
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 `;
 const Contact = styled.div`
   display: flex;

@@ -124,12 +124,17 @@ const SectionText = styled.section`
       font-size: 24px;
     }
   }
+  @media (max-width: 1000px){
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 `;
 const Article = styled.article`
   display: flex;
   justify-content: space-evenly;
   padding: 50px;
-  height: 1100px;
+  min-height: 1100px;
   & img {
     width: 500px;
     height: 750px;
@@ -138,14 +143,26 @@ const Article = styled.article`
     border-radius: 15px;
   }
   & div {
-    width: 500px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     text-align: center;
     & h2 {
-      width: 400px;
+      max-width: 400px;
+    }
+  }
+  @media (max-width: 1000px){
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 50px 20px 20px;
+     & img{
+      margin-top: 20px;
+    }
+    & div{
+      gap: 20px;
     }
   }
 `;
