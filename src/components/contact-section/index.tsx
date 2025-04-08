@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FadeInSection } from "../framer-motion";
 import { Alerta } from "../framer-motion";
 
@@ -65,6 +65,13 @@ export const ContactSection: React.FC = () => {
       setTimeout(() => setShowAlert(false), 6000);
     }
   };
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  }, []);
 
   return (
     <>

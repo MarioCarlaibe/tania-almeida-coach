@@ -136,6 +136,12 @@ const Section = styled.section`
     border-radius: 15px;
     box-shadow: 0 0 50px ${({ theme }) => theme.colors.color};
   }
+  @media (max-width: 1280px){
+    padding: 30px;
+    & img{
+      width: 95vw;
+    }
+  }
 `;
 const Coach = styled.article`
   display: flex;
@@ -159,12 +165,23 @@ const Coach = styled.article`
       width: 300px;
     }
   }
-  @media (max-width: 1000px){
+  @media (max-width: 1280px){
     flex-direction: column;
     align-items: center;
     gap: 60px;
     & div{
       gap: 30px;
+    }
+    & img {
+      width: 200px;
+    }
+  }
+  @media (max-width: 768px){
+    & h2{
+        font-size: 20px;
+      }
+      & p{
+        font-size: 14px;
     }
   }
 `;
@@ -183,7 +200,7 @@ const Article = styled.article`
     gap: 20px;
     max-width: 500px;
   }
-  @media (max-width: 1000px){
+  @media (max-width: 1280px){
     flex-direction: column;
     align-items: center;
     gap: 50px;
@@ -193,6 +210,13 @@ const Article = styled.article`
   }
   @media (max-width: 768px){
     padding: 30px 20px;
+    & h2{
+        font-size: 20px;
+      }
+      & p{
+        font-size: 14px;
+    }
+  }
   }
 `;
 const Profile = styled.section`
@@ -209,7 +233,19 @@ const Profile = styled.section`
     box-shadow: 0 0 5px 2px ${({ theme }) => theme.colors.colorInvert};
     background-color: ${({ theme }) => theme.colors.bg};
   }
-  @media (max-width: 1000px){
+  @media (max-width: 1280px){
     flex-wrap: wrap;
+  }
+  @media (max-width: 768px){
+    padding: 30px;
+    text-align: center;
+    & div{
+      & h2{
+        font-size: 20px;
+      }
+      & p{
+        font-size: 14px;
+      }
+    }
   }
 `;

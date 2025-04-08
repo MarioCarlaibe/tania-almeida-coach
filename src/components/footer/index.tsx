@@ -56,7 +56,7 @@ export const FooterMenu = () => {
           </Links>
         </Footer>
         <Credits>
-          2025 | Designed & Coded com <FaHeart /> por Carlaibe.Dev
+          <p>2025 | Designed & Coded com <FaHeart /> por Carlaibe.Dev</p>
         </Credits>
       </FadeInSection>
 
@@ -70,10 +70,18 @@ const Footer = styled.footer`
   gap: 60px;
   min-height: 280px;
   padding: 30px;
-  @media (max-width: 1000px){
+  @media (max-width: 1280px){
     flex-direction: column;
     align-items: center;
     text-align: center;
+  }
+  @media (max-width: 768px){
+    & h2{
+        font-size: 20px;
+      }
+      & p{
+        font-size: 14px;
+    }
   }
 `;
 const Contact = styled.div`
@@ -118,10 +126,20 @@ const Icons = styled.div`
       transform: scale(1.2);
     }
   }
+  @media (max-width: 768px){
+    & a{
+      font-size: 20px;
+    }
+  }
 `;
 const Credits = styled.p`
   text-align: center;
   padding: 40px;
   background-color: ${({ theme }) => theme.colors.bgInvert};
   color: ${({ theme }) => theme.colors.colorInvert};
+  @media (max-width: 768px){
+    & p{
+      font-size: 14px;
+    }
+  }
 `;

@@ -73,7 +73,7 @@ export const TestimonySection = () => {
             <img src={testimonyFour} alt="Photo Client" />
             <section>
               <h3>Luciana Andrade</h3>
-              <h5>Advogado</h5>
+              <h5>Advogada</h5>
               <StarIcon />
               <StarIcon />
               <StarIcon />
@@ -141,14 +141,22 @@ const Article = styled.article`
       margin-top: 30px;
     }
   }
-  @media (max-width: 1000px){
-    padding: 50px 20px 20px;
+  @media (max-width: 1280px){
+    padding: 30px 20px 0;
   }
   @media (max-width: 768px){
     & div{
       flex-direction: column;
       padding: 50px 20px;
     }
+    @media (max-width: 768px){
+    & h3{
+        font-size: 20px;
+      }
+      & p{
+        font-size: 14px;
+    }
+  }
   }
 `;
 const StarIcon = styled(FaStar)`

@@ -51,19 +51,25 @@ const Overlay = styled.div`
   z-index: 999;
 `;
 const Box = styled(motion.div)`
-  background: white;
-  padding: 30px 40px;
+  background-color: ${({ theme }) => theme.colors.bgInvert};
+  padding: 20px;
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
-  min-width: 300px;
+  max-width: 400px;
+  & p{
+    color: ${({ theme }) => theme.colors.color};
+  }
+  @media (max-width: 400px) {
+    padding: 15px;
+  }
 `;
 const ClosedButton = styled.button`
   margin-top: 20px;
   padding: 10px 18px;
   border: none;
-  background: #0077cc;
-  color: white;
+  background-color: ${({ theme }) => theme.colors.color};
+  color: ${({ theme }) => theme.colors.bg};
   border-radius: 6px;
   cursor: pointer;
 `;

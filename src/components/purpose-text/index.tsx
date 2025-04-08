@@ -74,7 +74,7 @@ const Section = styled.section`
   }
   & div {
     display: flex;
-    padding: 50px;
+    padding: 40px;
     flex-direction: column;
     gap: 30px;
     & h2 {
@@ -90,6 +90,23 @@ const Section = styled.section`
         width: 300px;
         text-align: center;
       }
+    }
+  }
+  @media (max-width: 1280px){
+    padding: 30px;
+    & img {
+    width: 95vw;
+    }
+    & div {
+      padding: 20px 20px 0;
+    }
+  }
+  @media (max-width: 768px){
+    & h2{
+        font-size: 20px;
+      }
+      & p{
+        font-size: 14px;
     }
   }
 `;

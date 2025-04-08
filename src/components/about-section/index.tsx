@@ -6,7 +6,6 @@ import { FadeInSection } from "../framer-motion";
 export const AboutSection = () => {
   return (
     <>
-      <FadeInSection>
         <Section>
           <img src={aboutTania} alt="Photo Tania" />
           <div>
@@ -41,7 +40,6 @@ export const AboutSection = () => {
             </p>
           </div>
         </Section>
-      </FadeInSection>
       <FadeInSection>
         <Article>
           <img src={aboutDetail} alt="Photo Detail" />
@@ -104,12 +102,15 @@ const Section = styled.section`
       width: 400px;
     }
   }
-  @media (max-width: 1000px){
+  @media (max-width: 1280px){
     flex-direction: column;
     align-items: center;
     gap: 60px;
+    padding: 30px;
     & img{
       margin-top: 0;
+      width: 250px;
+      height: 375px;
     }
     & div{
       gap: 30px;
@@ -118,6 +119,12 @@ const Section = styled.section`
   @media (max-width: 768px){
     & div{
       padding: 0 70px;
+    }
+    & h2{
+      font-size: 20px;
+      }
+    & p{
+      font-size: 14px;
     }
   }
 `;
@@ -147,15 +154,26 @@ const Article = styled.article`
       max-width: 400px;
     }
   }
-  @media (max-width: 1000px){
+  @media (max-width: 1280px){
     flex-direction: column;
     align-items: center;
     gap: 60px;
+    padding: 30px;
     & img {
-    margin-top: 20px;
+      margin-top: 20px;
+      width: 250px;
+      height: 375px;
     }
     & div{
       gap: 30px;
+    }
+  }
+  @media (max-width: 768px){
+    & h2{
+      font-size: 20px;
+      }
+    & p{
+      font-size: 14px;
     }
   }
 `;

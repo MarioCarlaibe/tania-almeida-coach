@@ -68,7 +68,11 @@ const Header = styled.header`
     display: flex;
     justify-content: center;
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1280px) {
+    & h1{
+      font-size: 70px;
+      padding: 20px 0;
+    }
     & nav {
       position: absolute;
       top: 38px;
@@ -86,6 +90,13 @@ const Header = styled.header`
       justify-content: center;
     }
   }
+  @media (max-width: 768px){
+    & h1{
+      font-size: 50px;
+      padding: 10px 30px;
+      text-align: left;
+    }
+  }
 `;
 
 const Label = styled.label`
@@ -96,7 +107,7 @@ const Label = styled.label`
   align-items: center;
   justify-content: center;
   display: none;
-  @media (max-width: 1000px) {
+  @media (max-width: 1280px) {
     display: block;
   }
 `;
@@ -126,7 +137,7 @@ const Hamburger = styled.span`
   &::after {
     bottom: -8px;
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1280px) {
     display: block;
   }
 `;
@@ -155,7 +166,7 @@ const Menu = styled.ul`
     }
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1280px) {
     display: none;
     width: 230px;
     background-color: ${({ theme }) => theme.colors.bg};
@@ -194,7 +205,7 @@ const Checkbox = styled.input.attrs({ type: "checkbox" })`
     bottom: 0;
     width: 100%;
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1280px) {
     &:checked ~ ${Menu} {
       display: block;
     }
@@ -208,16 +219,23 @@ const Icons = styled.div`
   left: 10%;
   & a {
     font-size: 30px;
-    color: var(--Body);
     transition: all 0.3s ease-in-out;
     &:hover {
       transform: scale(1.2);
     }
   }
-  @media (max-width: 1000px){
+  @media (max-width: 1280px){
     position: relative;
     justify-content: center;
     top: 0;
     left: 0;
+    & a{
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 768px){
+    & a{
+      font-size: 20px;
+    }
   }
 `;

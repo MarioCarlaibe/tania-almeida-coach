@@ -6,11 +6,9 @@ import { FadeInSection } from "../framer-motion";
 export const CoachSection = () => {
   return (
     <>
-      <FadeInSection>
         <Section>
           <img src={coachPersonal} alt="Photo Coach" />
         </Section>
-      </FadeInSection>
       <FadeInSection>
         <SubTitle>O Coaching e a Evolução Profissional</SubTitle>
         <SectionText>
@@ -99,6 +97,12 @@ const Section = styled.section`
     border-radius: 15px;
     box-shadow: 0 0 50px ${({ theme }) => theme.colors.color};
   }
+  @media (max-width: 1280px){
+    padding: 30px;
+    & img {
+    width: 95vw;
+    }
+  }
 `;
 const SubTitle = styled.h2`
   text-align: center;
@@ -106,6 +110,9 @@ const SubTitle = styled.h2`
   font-size: 32px;
   background-color: ${({ theme }) => theme.colors.bgInvert};
   color: ${({ theme }) => theme.colors.colorInvert};
+  @media (max-width: 768px){
+    font-size: 24px;
+  }
 `;
 const SectionText = styled.section`
   display: flex;
@@ -124,10 +131,19 @@ const SectionText = styled.section`
       font-size: 24px;
     }
   }
-  @media (max-width: 1000px){
+  @media (max-width: 1280px){
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+  }
+  @media (max-width: 768px){
+    padding: 30px 20px;
+    & section h3{
+        font-size: 20px;
+      }
+    & section p{
+        font-size: 14px;
+    }
   }
 `;
 const Article = styled.article`
@@ -153,16 +169,27 @@ const Article = styled.article`
       max-width: 400px;
     }
   }
-  @media (max-width: 1000px){
+  @media (max-width: 1280px){
     flex-direction: column;
     align-items: center;
     gap: 50px;
     padding: 50px 20px 20px;
      & img{
       margin-top: 20px;
+      width: 250px;
+      height: 375px;
     }
     & div{
       gap: 20px;
+    }
+  }
+  @media (max-width: 768px){
+    padding: 20px 30px;
+    & h2{
+        font-size: 20px;
+      }
+    & p{
+        font-size: 14px;
     }
   }
 `;

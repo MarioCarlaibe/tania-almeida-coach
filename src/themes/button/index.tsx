@@ -40,7 +40,7 @@ const Switch = styled.label`
   & input {
     display: none;
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 1280px) {
     width: 80px;
     height: 35px;
   }
@@ -57,7 +57,7 @@ const Sunmoon = styled.span`
     ${Switch} input:checked ~ & {
         left: calc(100% - 41px);
     }
-    @media (max-width: 1000px){
+    @media (max-width: 1280px){
         width: 28px;
         height: 28px;
         ${Switch} input:checked ~ & {
@@ -81,7 +81,7 @@ const Clouds = styled.div`
   border-radius: 50px;
   overflow: hidden;
   transition: all 0.7s ease-in-out;
-  @media (max-width: 1000px) {
+  @media (max-width: 1280px) {
     display: none;
   }
 `;
@@ -91,7 +91,7 @@ const CloudOne = styled.img`
   bottom: ${({ theme }) => theme.transitions.bottomOne};
   left: ${({ theme }) => theme.transitions.leftOne};
   transition: all 0.7s ease-in-out;
-  @media (max-width: 1000px) {
+  @media (max-width: 1280px) {
     display: none;
   }
 `;
@@ -101,7 +101,7 @@ const CloudTwo = styled.img`
   bottom: ${({ theme }) => theme.transitions.bottomTwo};
   left: ${({ theme }) => theme.transitions.leftTwo};
   transition: all 0.7s ease-in-out;
-  @media (max-width: 1000px) {
+  @media (max-width: 1280px) {
     display: none;
   }
 `;
@@ -111,7 +111,7 @@ const CloudThree = styled.img`
   bottom: ${({ theme }) => theme.transitions.bottomThree};
   right: ${({ theme }) => theme.transitions.rightThree};
   transition: all 0.7s ease-in-out;
-  @media (max-width: 1000px) {
+  @media (max-width: 1280px) {
     display: none;
   }
 `;
@@ -121,7 +121,7 @@ const CloudFour = styled.img`
   bottom: ${({ theme }) => theme.transitions.bottomFour};
   right: ${({ theme }) => theme.transitions.rightFour};
   transition: all 0.7s ease-in-out;
-  @media (max-width: 1000px) {
+  @media (max-width: 1280px) {
     display: none;
   }
 `;
@@ -132,7 +132,7 @@ const Stars = styled.img`
   left: 0;
   transform: translateY(-50%);
   transition: all 0.7s ease-in-out;
-  @media (max-width: 1000px) {
+  @media (max-width: 1280px) {
     display: none;
   }
 `;
