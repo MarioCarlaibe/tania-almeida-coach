@@ -60,7 +60,7 @@ const Section = styled.section`
     align-items: center;
     text-align: center;
     & h2 {
-      width: 400px;
+      max-width: 400px;
     }
   }
   @media (max-width: 1280px){
@@ -69,9 +69,6 @@ const Section = styled.section`
     padding: 30px;
     & img{
       height: 420px;
-    }
-    & div{
-      gap: 30px;
     }
   }
   @media (max-width: 768px){
@@ -117,9 +114,6 @@ const Article = styled.article`
     padding: 30px;
     & img {
       height: 420px;
-    }
-    & div{
-      gap: 30px;
     }
   }
   @media (max-width: 768px){

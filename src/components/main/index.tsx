@@ -16,28 +16,10 @@ export const MainCover = () => {
           <div>
             <h2>Como o Coach ajuda a restabelecer Conexões?</h2>
             <p>
-              O objetivo de um coaching ao ajudar um casal a se restabelecer no
-              casamento usando o método DISC é promover o autoconhecimento e a
-              compreensão mútua entre os parceiros. Cada indivíduo possui um
-              perfil comportamental distinto – Dominância, Influência,
-              Estabilidade ou Conformidade – que influencia sua forma de se
-              comunicar, tomar decisões e lidar com conflitos. Ao identificar
-              essas características, o coaching auxilia o casal a reconhecer as
-              diferenças naturais entre eles, reduzindo mal-entendidos e
-              promovendo uma comunicação mais eficaz e empática.
+            O objetivo do coaching ao ajudar um casal a se restabelecer no casamento com o método DISC é promover o autoconhecimento e a compreensão mútua. Cada parceiro possui um perfil comportamental – Dominância, Influência, Estabilidade ou Conformidade – que influencia na forma de se comunicar, tomar decisões e lidar com conflitos. Ao identificar essas diferenças, o coaching facilita uma comunicação mais empática e eficiente, reduzindo mal-entendidos e melhorando a convivência.
             </p>
             <p>
-              Além disso, o coaching trabalha para fortalecer o relacionamento
-              ao criar estratégias personalizadas para cada perfil
-              comportamental, ajudando o casal a encontrar um equilíbrio
-              saudável na convivência. Pessoas mais dominantes podem aprender a
-              ser mais flexíveis e atentas às necessidades do parceiro, enquanto
-              indivíduos mais influentes podem desenvolver maior organização e
-              comprometimento. Já aqueles com perfil estável podem aprender a
-              expressar melhor suas emoções, e os mais conformes podem trabalhar
-              a flexibilidade diante das imperfeições do relacionamento. Dessa
-              forma, o método DISC se torna uma ferramenta poderosa para
-              restaurar a harmonia e fortalecer a parceria no casamento.
+            Além disso, o coach trabalha estratégias alinhadas aos perfis de cada um, ajudando o casal a desenvolver habilidades que equilibram a relação. Por exemplo, pessoas dominantes aprendem a ouvir mais, as influentes ganham foco, as estáveis expressam melhor seus sentimentos, e as conformes se tornam mais flexíveis. Assim, o DISC se torna uma ferramenta poderosa para fortalecer a parceria e restaurar a harmonia no relacionamento.
             </p>
           </div>
         </Coach>
@@ -130,7 +112,7 @@ const Section = styled.section`
   justify-content: center;
   padding: 50px;
   & img {
-    width: 1280px;
+    width: 1150px;
     border-radius: 15px;
     box-shadow: 0 0 10px ${({ theme }) => theme.colors.color};
   }
@@ -143,12 +125,14 @@ const Section = styled.section`
 `;
 const Coach = styled.article`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   padding: 50px;
+  gap: 50px;
   background-color: ${({ theme }) => theme.colors.bgInvert};
   color: ${({ theme }) => theme.colors.colorInvert};
   & img {
-    width: 500px;
+    height: 600px;
     box-shadow: 0 0 10px ${({ theme }) => theme.colors.colorInvert};
     border-radius: 15px;
   }
@@ -156,7 +140,7 @@ const Coach = styled.article`
     max-width: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 30px;
     align-items: center;
     text-align: center;
     & h2 {
@@ -166,29 +150,34 @@ const Coach = styled.article`
   @media (max-width: 1280px){
     flex-direction: column-reverse;
     align-items: center;
-    gap: 60px;
+    padding: 30px;
     & div{
       gap: 30px;
     }
     & img {
-      width: 200px;
+      height: 420px;
     }
   }
   @media (max-width: 768px){
+    & div{
+      max-width: 375px;
+    }
     & h2{
         font-size: 20px;
-      }
-      & p{
+    }
+    & p{
         font-size: 14px;
     }
   }
 `;
 const Article = styled.article`
   display: flex;
-  justify-content: space-evenly;
-  padding: 30px 200px;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  gap: 50px;
   & img {
-    width: 500px;
+    width: 400px;
   }
   & div {
     display: flex;
@@ -207,7 +196,9 @@ const Article = styled.article`
     }
   }
   @media (max-width: 768px){
-    padding: 30px 20px;
+    & div{
+      max-width: 375px;
+    }
     & h2{
         font-size: 20px;
       }
