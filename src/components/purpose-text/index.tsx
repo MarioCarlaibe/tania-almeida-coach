@@ -12,48 +12,19 @@ export const PurposeSection = () => {
             <h2>Meu Propósito</h2>
             <section>
               <p>
-                O coaching profissional e familiar tem um papel essencial na
-                transformação de vidas. Seu principal objetivo é ajudar as
-                pessoas a se reconectarem com seus valores, desenvolverem suas
-                habilidades e criarem um futuro mais alinhado com seus sonhos e
-                propósitos. Através de técnicas e abordagens personalizadas, o
-                coaching possibilita um crescimento tanto no âmbito pessoal
-                quanto profissional.
+              O coaching profissional e familiar é uma ponte para a transformação de vidas. Ele ajuda as pessoas a se reconectarem com seus valores, descobrirem novos caminhos e construírem uma realidade mais alinhada com seus sonhos e propósitos.
               </p>
               <p>
-                Além de orientar indivíduos em suas carreiras, o coaching também
-                proporciona um impacto positivo no equilíbrio emocional e na
-                forma como lidamos com os desafios da vida. Ao desenvolver
-                autoconfiança e resiliência, as pessoas conseguem tomar decisões
-                mais conscientes e assertivas, alcançando melhores resultados
-                tanto no trabalho quanto nos relacionamentos.
+              Além do aspecto profissional, o coaching fortalece o equilíbrio emocional e ensina a lidar melhor com os desafios. Isso gera mais clareza nas decisões e mais satisfação na vida como um todo.
               </p>
               <p>
-                No contexto familiar, o coaching ajuda a restaurar laços e
-                fortalecer conexões, promovendo a comunicação eficaz e o
-                entendimento mútuo. Muitas vezes, conflitos surgem por falta de
-                diálogo ou por dificuldades em expressar sentimentos e
-                necessidades. O coaching atua como uma ponte para essa
-                reconciliação, permitindo que cada indivíduo compreenda melhor
-                suas emoções e as dos outros ao seu redor.
+              No ambiente familiar, o coaching atua como uma ponte de reconciliação, restaurando vínculos e promovendo o respeito mútuo. Ele cria um espaço onde as emoções são acolhidas e compreendidas.
               </p>
               <p>
-                O propósito do coaching vai além do desenvolvimento individual;
-                ele busca criar uma sociedade mais empática e conectada. Quando
-                pessoas aprendem a gerir melhor suas emoções e a se comunicar
-                com clareza, os impactos são sentidos em suas famílias, locais
-                de trabalho e comunidades. Dessa forma, o coaching se torna uma
-                ferramenta poderosa para gerar mudanças duradouras e
-                significativas.
+              Ao transformar o indivíduo, o coaching gera um efeito positivo que se estende à família, ao trabalho e à sociedade. É uma ferramenta poderosa para promover mudanças reais e duradouras.
               </p>
               <p>
-                Em última análise, meu propósito como coach é inspirar e
-                transformar vidas. Através do meu trabalho, busco oferecer
-                suporte, orientação e motivação para que cada pessoa alcance seu
-                máximo potencial e viva uma vida mais plena e realizada. O
-                coaching é um caminho para a evolução contínua, e tenho o
-                privilégio de trilhar essa jornada ao lado daqueles que desejam
-                crescer e se fortalecer.
+              Meu propósito como coach é justamente esse: inspirar, orientar e transformar. Através do meu trabalho, busco despertar o melhor em cada pessoa, ajudando-a a viver de forma mais plena, consciente e conectada com sua essência.
               </p>
             </section>
           </div>
@@ -66,15 +37,15 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 70px 0 0;
+  padding: 50px 0 0;
   & img {
-    width: 1280px;
+    width: 1150px;
     border-radius: 15px;
-    box-shadow: 0 0 50px ${({ theme }) => theme.colors.color};
+    box-shadow: 0 0 10px ${({ theme }) => theme.colors.color};
   }
   & div {
     display: flex;
-    padding: 40px;
+    padding: 20px 0 10px;
     flex-direction: column;
     gap: 30px;
     & h2 {
@@ -82,12 +53,12 @@ const Section = styled.section`
     }
     & section {
       display: flex;
-      max-width: 1280px;
+      max-width: 1000px;
       gap: 40px;
       flex-wrap: wrap;
       justify-content: center;
       & p {
-        width: 300px;
+        width: 250px;
         text-align: center;
       }
     }

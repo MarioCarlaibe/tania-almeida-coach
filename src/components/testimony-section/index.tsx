@@ -122,7 +122,7 @@ const Article = styled.article`
   & div {
     background-color: ${({ theme }) => theme.colors.bgInvert};
     color: ${({ theme }) => theme.colors.colorInvert};
-    box-shadow: 0 0 50px ${({ theme }) => theme.colors.color};
+    box-shadow: 0 0 10px ${({ theme }) => theme.colors.color};
     border-radius: 15px;
     display: flex;
     align-items: center;
