@@ -2,92 +2,48 @@ import styled from "styled-components";
 import { FaInstagram, FaEnvelope, FaWhatsapp } from "react-icons/fa";
 import { AnimatedButton } from "../../themes/button";
 import { Link } from "react-router-dom";
+import { MenuHamburguer } from "../menu-hamburguer"
 
 export const HeaderMenu = () => {
   return (
     <Header>
-      <h1>Tânia Almeida</h1>
-      <Icons>
-        <a href="#">
-          <FaInstagram />
-        </a>
-        <a href="#">
-          <FaEnvelope />
-        </a>
-        <a href="https://wa.me/5516990909090">
-          <FaWhatsapp />
-        </a>
-      </Icons>
-      <nav>
-        <Checkbox id="menu-hamburguer" />
-        <Label htmlFor="menu-hamburguer">
-          <div>
-            <Hamburger />
-          </div>
-        </Label>
-        <Menu>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/sobre">Sobre</Link>
-          </li>
-          <li>
-            <Link to="/coach">Coach</Link>
-          </li>
-          <li>
-            <Link to="/purpose">Meu propósito</Link>
-          </li>
-          <li>
-            <Link to="/testimony">Depoimentos</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contato</Link>
-          </li>
-          <Button>
-            <AnimatedButton />
-          </Button>
-        </Menu>
-      </nav>
+      <Title>
+        <Icons>
+          <a href="#"><FaInstagram /></a>
+          <a href="#"><FaEnvelope /></a>
+          <a href="https://wa.me/5516990909090"><FaWhatsapp /></a>
+        </Icons>
+        <h1>Tânia Almeida</h1>
+        <MenuHamburguer/>
+      </Title>
+       <Menu>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/sobre">Sobre</Link></li>
+        <li><Link to="/coach">Coach</Link></li>
+        <li><Link to="/purpose">Meu propósito</Link></li>
+        <li><Link to="/testimony">Depoimentos</Link></li>
+        <li><Link to="/contact">Contato</Link></li>
+        <Button>
+          <AnimatedButton />
+        </Button>
+      </Menu>
     </Header>
   );
 };
-
-const Header = styled.header`
+const Title = styled.div`
   display: flex;
-  flex-direction: column;
-  position: relative;
+  justify-content: center;
   & h1 {
     padding: 30px;
-    text-align: center;
     font-family: "Imperial Script", cursive;
     font-weight: 400;
     font-size: 100px;
   }
-  & nav {
-    display: flex;
-    justify-content: center;
-  }
-  @media (max-width: 1280px) {
+  @media (max-width: 1280px){
+    flex-direction: column-reverse;
     & h1{
       font-size: 70px;
       padding: 20px 0;
-    }
-    & nav {
-      position: absolute;
-      top: 38px;
-      right: 30px;
-      z-index: 1;
-    }
-    & nav div {
-      position: absolute;
-      right: 10px;
-      cursor: pointer;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
   }
   @media (max-width: 768px){
@@ -97,51 +53,42 @@ const Header = styled.header`
       text-align: left;
     }
   }
+`
+const Icons = styled.div`
+  display: flex;
+  position: absolute;
+  top: 70px;
+  left: 12%;
+  gap: 20px;
+  align-items: center;
+  z-index: 10;
+  & a {
+    font-size: 30px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+  @media (max-width: 1280px){
+    position: relative;
+    inset: 0;
+    justify-content: center;
+    & a{
+      font-size: 25px;
+    }
+  }
+  @media (max-width: 768px){
+    & a{
+      font-size: 20px;
+    }
+  }
 `;
-
-const Label = styled.label`
+const Header = styled.header`
   display: flex;
   flex-direction: column;
-  width: 40px;
-  height: 40px;
-  align-items: center;
-  justify-content: center;
-  display: none;
-  @media (max-width: 1280px) {
-    display: block;
-  }
-`;
-
-const Hamburger = styled.span`
-  background-color: ${({ theme }) => theme.colors.color};
   position: relative;
-  width: 25px;
-  height: 2px;
-  transition: 0.5s ease-in-out;
-  display: none;
-
-  &::before,
-  &::after {
-    content: "";
-    background-color: ${({ theme }) => theme.colors.color};
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transition: 0.2s ease-in-out;
-  }
-
-  &::before {
-    top: -8px;
-  }
-
-  &::after {
-    bottom: -8px;
-  }
-  @media (max-width: 1280px) {
-    display: block;
-  }
+  align-items: center;
 `;
-
 const Menu = styled.ul`
   display: flex;
   width: 1280px;
@@ -165,77 +112,12 @@ const Menu = styled.ul`
       color: ${({ theme }) => theme.colors.colorInvert};
     }
   }
-
   @media (max-width: 1280px) {
     display: none;
-    width: 230px;
-    background-color: ${({ theme }) => theme.colors.bg};
-    padding: 20px;
-    border-radius: 10px;
-    margin-top: 60px;
-    border: 2px solid ${({ theme }) => theme.colors.color};
-    & a {
-      display: block;
-      padding: 20px;
-      text-align: center;
-    }
   }
 `;
 const Button = styled.li`
   display: flex;
   justify-content: center;
   margin-top: 15px;
-`;
-
-const Checkbox = styled.input.attrs({ type: "checkbox" })`
-  display: none;
-
-  &:checked ~ ${Label} ${Hamburger} {
-    transform: rotate(45deg);
-  }
-
-  &:checked ~ ${Label} ${Hamburger}::before {
-    transform: rotate(90deg);
-    top: 0;
-    width: 100%;
-  }
-
-  &:checked ~ ${Label} ${Hamburger}::after {
-    transform: rotate(90deg);
-    bottom: 0;
-    width: 100%;
-  }
-  @media (max-width: 1280px) {
-    &:checked ~ ${Menu} {
-      display: block;
-    }
-  }
-`;
-const Icons = styled.div`
-  display: flex;
-  gap: 20px;
-  position: absolute;
-  top: 80px;
-  left: 10%;
-  & a {
-    font-size: 30px;
-    transition: all 0.3s ease-in-out;
-    &:hover {
-      transform: scale(1.2);
-    }
-  }
-  @media (max-width: 1280px){
-    position: relative;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    & a{
-      font-size: 25px;
-    }
-  }
-  @media (max-width: 768px){
-    & a{
-      font-size: 20px;
-    }
-  }
 `;

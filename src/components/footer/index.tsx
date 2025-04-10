@@ -1,9 +1,8 @@
 import styled from "styled-components";
-import { FaInstagram, FaEnvelope, FaWhatsapp, FaCopy, FaHeart, } from "react-icons/fa";
-import { FadeInSection } from "../framer-motion";
+import { FaInstagram, FaEnvelope, FaWhatsapp, FaCopy } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { Alerta } from "../framer-motion";
+import { Alerta, HeartIcon, FadeInSection } from "../framer-motion";
 
 export const FooterMenu = () => {
   const [showAlert, setShowAlert] = useState(false);
@@ -55,9 +54,7 @@ export const FooterMenu = () => {
             </button>
           </Links>
         </Footer>
-        <Credits>
-          <p>2025 | Designed & Coded com <FaHeart /> por Carlaibe.Dev</p>
-        </Credits>
+        <Credits>2025 | Designed & Coded com <HeartIcon /> por Carlaibe.Dev</Credits>
       </FadeInSection>
 
       <Alerta show={showAlert} mensagem={alertMessage} onClose={() => setShowAlert(false)} />
@@ -133,13 +130,13 @@ const Icons = styled.div`
   }
 `;
 const Credits = styled.p`
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 40px;
   background-color: ${({ theme }) => theme.colors.bgInvert};
   color: ${({ theme }) => theme.colors.colorInvert};
   @media (max-width: 768px){
-    & p{
       font-size: 14px;
-    }
   }
 `;

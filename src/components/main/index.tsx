@@ -7,11 +7,9 @@ import { FadeInSection } from "../framer-motion";
 export const MainCover = () => {
   return (
     <>
-      <FadeInSection>
         <Section>
           <img src={coverMain} alt="Cover Main" />
         </Section>
-      </FadeInSection>
       <FadeInSection>
         <Coach>
           <img src={coachImg} alt="Coach Image" />
@@ -166,7 +164,7 @@ const Coach = styled.article`
     }
   }
   @media (max-width: 1280px){
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
     gap: 60px;
     & div{

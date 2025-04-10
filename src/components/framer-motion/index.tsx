@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion, AnimatePresence } from "framer-motion";
+import { FaHeart } from "react-icons/fa";
 
 export const FadeInSection = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -14,6 +15,19 @@ export const FadeInSection = ({ children }: { children: React.ReactNode }) => {
     </motion.div>
   );
 };
+
+export const HeartIcon = () => {
+  return (
+    <MotionHeart
+      animate={{ scale: [1, 1.2, 1] }}
+      transition={{ repeat: Infinity, duration: 2 }}
+    />
+  );
+};
+
+const MotionHeart = styled(motion.create(FaHeart))`
+  margin: 0 8px;
+`;
 
 interface AlertaProps {
   show: boolean;
