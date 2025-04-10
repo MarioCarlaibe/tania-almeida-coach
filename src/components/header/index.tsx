@@ -63,7 +63,7 @@ const Icons = styled.div`
   align-items: center;
   z-index: 10;
   & a {
-    font-size: 30px;
+    font-size: 25px;
     transition: all 0.3s ease-in-out;
     &:hover {
       transform: scale(1.2);

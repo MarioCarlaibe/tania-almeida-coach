@@ -11,32 +11,13 @@ export const AboutSection = () => {
           <div>
             <h2>A Jornada de Tânia Almeida: Superação e Propósito</h2>
             <p>
-              Tânia Almeida sempre foi uma mulher determinada, que enfrentou
-              desafios com coragem e resiliência. Mãe de três filhos e casada
-              com Edson Júnior, um homem maravilhoso que sempre a apoiou, ela
-              dedicou sua vida a ajudar o próximo. Desde cedo, Tânia percebeu
-              que sua missão era transformar vidas, e foi assim que, com muita
-              dedicação, começou sua trajetória ajudando pessoas em momentos
-              difíceis. Sua capacidade de escuta e empatia fizeram dela um
-              verdadeiro suporte para quem precisava de orientação e incentivo.
+            Tânia Almeida sempre foi uma mulher determinada e resiliente. Mãe de três filhos e casada com Edson Júnior, um grande companheiro, ela sempre teve como missão ajudar o próximo. Desde jovem, acolheu pessoas em momentos difíceis, oferecendo palavras de apoio e escuta verdadeira.
             </p>
             <p>
-              Com o passar dos anos, Tânia percebeu que poderia ampliar ainda
-              mais seu impacto ao estudar coaching. Buscando conhecimento e
-              aprimorando suas habilidades, ela mergulhou de corpo e alma nessa
-              área, com o objetivo de proporcionar um modo de vida melhor para
-              aqueles que a procuram. Sua formação foi um divisor de águas, pois
-              lhe permitiu estruturar sua abordagem e oferecer um suporte ainda
-              mais efetivo para aqueles que desejavam mudar suas trajetórias.
+            Com o tempo, percebeu que poderia ampliar seu impacto estudando coaching. Aprofundou-se na área com dedicação, buscando ferramentas para transformar ainda mais vidas. O coaching permitiu que ela organizasse melhor sua forma de ajudar, com métodos eficazes e direcionados.
             </p>
             <p>
-              Foi assim que nasceu a Conexões, sua empresa dedicada ao
-              desenvolvimento pessoal e à reconstrução de laços familiares. A
-              partir do seu trabalho, Tânia tem ajudado inúmeras pessoas a
-              reencontrarem sua essência, superarem conflitos e resgatarem
-              relações abaladas. Para ela, cada história transformada é uma
-              vitória, e ver famílias se reaproximando e indivíduos retomando o
-              controle de suas vidas é a maior recompensa de sua jornada.
+            Foi assim que nasceu a Conexões, sua empresa voltada ao desenvolvimento pessoal e à reconstrução familiar. Através dela, Tânia tem ajudado pessoas a reencontrarem seu valor, reconstruírem vínculos e retomarem o controle de suas vidas. Cada história de superação é para ela um grande presente.
             </p>
           </div>
         </Section>
@@ -46,32 +27,13 @@ export const AboutSection = () => {
           <div>
             <h2>O Impacto do Trabalho de Tânia na Vida das Pessoas</h2>
             <p>
-              O coaching de Tânia Almeida tem sido uma verdadeira ferramenta de
-              transformação para muitas pessoas. Com sua abordagem humanizada e
-              acolhedora, ela tem ajudado indivíduos a encontrarem sentido na
-              vida, superarem traumas e traçarem novos caminhos. Seus
-              atendimentos são guiados pela escuta ativa e pelo compromisso de
-              oferecer soluções práticas para os desafios enfrentados por seus
-              clientes. Mais do que um trabalho, para Tânia, essa missão é um
-              chamado, e ela se dedica a isso com todo o amor e dedicação.
+            O coaching de Tânia tem sido uma ferramenta poderosa de transformação. Com empatia e escuta ativa, ela ajuda pessoas a enfrentarem desafios, redescobrirem seus talentos e encontrarem um novo rumo em suas vidas. Sua atuação vai além da técnica — é feita com coração.
             </p>
             <p>
-              Um dos aspectos mais marcantes do trabalho de Tânia é a sua
-              capacidade de restaurar relacionamentos familiares. Muitas
-              famílias, abaladas por problemas e desentendimentos, encontraram
-              na Conexões um espaço seguro para resgatar o diálogo e reconstruir
-              laços afetivos. Com suas orientações, ela tem proporcionado
-              momentos de reflexão e reconciliação, ajudando pais e filhos,
-              casais e irmãos a reencontrarem a harmonia e a união.
+            Um dos maiores diferenciais de seu trabalho é a restauração de vínculos familiares. Famílias que enfrentavam conflitos e distanciamentos encontraram na Conexões um espaço seguro para diálogo e reconciliação. O resultado é mais compreensão, afeto e união entre os membros.
             </p>
             <p>
-              Através do seu conhecimento e dedicação, Tânia Almeida não apenas
-              transforma vidas, mas também salva histórias que pareciam estar
-              perdidas. Seu trabalho tem sido um farol de esperança para aqueles
-              que se sentiam sem direção, mostrando que é possível recomeçar e
-              construir um futuro melhor. Para ela, cada vida impactada é uma
-              confirmação de que está no caminho certo, e sua jornada continua
-              inspirando muitas pessoas a acreditarem no poder da mudança.
+            Com dedicação e sensibilidade, Tânia tem sido um ponto de apoio para quem precisa recomeçar. Seu trabalho inspira coragem, desperta potenciais e mostra que a mudança é sempre possível. Ela acredita que cada pessoa pode escrever uma nova história e vive esse propósito diariamente.
             </p>
           </div>
         </Article>
@@ -81,21 +43,20 @@ export const AboutSection = () => {
 };
 const Section = styled.section`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   padding: 50px;
-  min-height: 1100px;
+  gap: 50px;
   & img {
-    width: 500px;
-    height: 750px;
-    margin-top: 100px;
-    box-shadow: 0 0 50px ${({ theme }) => theme.colors.color};
+    height: 600px;
+    box-shadow: 0 0 10px ${({ theme }) => theme.colors.color};
     border-radius: 15px;
   }
   & div {
     max-width: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 30px;
     align-items: center;
     text-align: center;
     & h2 {
@@ -103,14 +64,11 @@ const Section = styled.section`
     }
   }
   @media (max-width: 1280px){
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    gap: 60px;
     padding: 30px;
     & img{
-      margin-top: 0;
-      width: 250px;
-      height: 375px;
+      height: 420px;
     }
     & div{
       gap: 30px;
@@ -118,7 +76,7 @@ const Section = styled.section`
   }
   @media (max-width: 768px){
     & div{
-      padding: 0 70px;
+      max-width: 375px;
     }
     & h2{
       font-size: 20px;
@@ -131,23 +89,22 @@ const Section = styled.section`
 const Article = styled.article`
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   padding: 50px;
-  min-height: 1100px;
+  gap: 50px;
   background-color: ${({ theme }) => theme.colors.bgInvert};
   color: ${({ theme }) => theme.colors.colorInvert};
   & img {
-    width: 500px;
-    height: 750px;
-    margin-top: 100px;
-    box-shadow: 0 0 50px ${({ theme }) => theme.colors.colorInvert};
+    height: 600px;
+    box-shadow: 0 0 10px ${({ theme }) => theme.colors.colorInvert};
     border-radius: 15px;
   }
   & div {
     max-width: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 30px;
     align-items: center;
     text-align: center;
     & h2 {
@@ -155,20 +112,20 @@ const Article = styled.article`
     }
   }
   @media (max-width: 1280px){
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    gap: 60px;
     padding: 30px;
     & img {
-      margin-top: 20px;
-      width: 250px;
-      height: 375px;
+      height: 420px;
     }
     & div{
       gap: 30px;
     }
   }
   @media (max-width: 768px){
+    & div{
+      max-width: 375px;
+    }
     & h2{
       font-size: 20px;
       }

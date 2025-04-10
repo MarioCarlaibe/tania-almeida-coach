@@ -145,12 +145,23 @@ const MotionMenu = styled(motion.nav)`
   padding: 1rem;
   border-radius: 8px;
   z-index: 10;
-  li {
+  & li {
     margin-bottom: 10px;
+    transition: all 0.3s ease-in-out;
     a {
       color: ${({ theme }) => theme.colors.colorInvert};
-      font-weight: 500;
+      font-weight: 400;
+      padding: 5px 20px;
+      border-radius: 50px;
+      transition: 0.3s ease-out;
+      &:hover {
+      background-color: ${({ theme }) => theme.colors.bg};
+      color: ${({ theme }) => theme.colors.color};
+      }
     }
+  }
+  & li:hover {
+    transform: scale(1.1);
   }
 `;
 const Button = styled.li`

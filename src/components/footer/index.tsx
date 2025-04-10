@@ -117,7 +117,7 @@ const Icons = styled.div`
   display: flex;
   gap: 20px;
   & a {
-    font-size: 40px;
+    font-size: 30px;
     transition: all 0.3s ease-in-out;
     &:hover {
       transform: scale(1.2);

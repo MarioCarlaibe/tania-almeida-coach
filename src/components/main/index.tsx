@@ -128,11 +128,11 @@ export const MainCover = () => {
 const Section = styled.section`
   display: flex;
   justify-content: center;
-  padding: 70px 0 50px;
+  padding: 50px;
   & img {
     width: 1280px;
     border-radius: 15px;
-    box-shadow: 0 0 50px ${({ theme }) => theme.colors.color};
+    box-shadow: 0 0 10px ${({ theme }) => theme.colors.color};
   }
   @media (max-width: 1280px){
     padding: 30px;
@@ -149,7 +149,7 @@ const Coach = styled.article`
   color: ${({ theme }) => theme.colors.colorInvert};
   & img {
     width: 500px;
-    box-shadow: 0 0 50px ${({ theme }) => theme.colors.colorInvert};
+    box-shadow: 0 0 10px ${({ theme }) => theme.colors.colorInvert};
     border-radius: 15px;
   }
   & div {
@@ -228,7 +228,7 @@ const Profile = styled.section`
     width: 300px;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 0 5px 2px ${({ theme }) => theme.colors.colorInvert};
+    box-shadow: 0 0 10px ${({ theme }) => theme.colors.colorInvert};
     background-color: ${({ theme }) => theme.colors.bg};
   }
   @media (max-width: 1280px){
