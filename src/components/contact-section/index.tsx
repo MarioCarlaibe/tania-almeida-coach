@@ -173,6 +173,9 @@ const Form = styled.div`
     color: red;
     font-size: 12px;
   }
+  & input{
+    color: ${({ theme }) => theme.colors.color};
+  }
 `;
 const Textarea = styled.textarea`
   resize: none;
@@ -181,6 +184,7 @@ const Textarea = styled.textarea`
   padding: 10px 20px;
   border: 1px solid ${({ theme }) => theme.colors.color};
   background-color: ${({ theme }) => theme.colors.bgInvert};
+  color: ${({ theme }) => theme.colors.color};
   &::placeholder {
     color: ${({ theme }) => theme.colors.color};
   }
