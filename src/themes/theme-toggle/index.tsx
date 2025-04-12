@@ -2,16 +2,16 @@ export const themes = {
   light: {
     title: "light",
     colors: {
-      bg: "#f4f4f3",
-      bgInvert: "#dcdcdc",
-      color: "#1c1c1c",
-      colorInvert: "#000000",
-      switchBg: "linear-gradient(to bottom, #73bbff, #a2d1fd)",
-      sunMoonBg: "#ffc187",
+      bg: "rgb(240, 207, 197)",
+      bgInvert: "rgb(212, 165, 151)",
+      color: " rgb(58, 26, 2)",
+      colorInvert: "rgb(32, 32, 32)",
+      colorIcons: "rgb(58, 26, 2)",
+      switchBg: "linear-gradient(to bottom, #B36A40, #FDBDA2)",
+      sunMoonBg: " #ffc187",
       sunMoonShadow:
         "0 0 11.7px 0 #ffc187, 0 0 20px 0 #ffc18768, -2px -2px 5px 0 #ffab5c inset",
-      darkSide: "#ffc187",
-      borderGradient: "linear-gradient(to bottom, #a2d1fd, #cde7ff)",
+      darkSide: " #ffc187",
     },
     transitions: {
       bottonWidth: "60%",
@@ -29,15 +29,15 @@ export const themes = {
   dark: {
     title: "dark",
     colors: {
-      bg: "#383838",
-      bgInvert: "#1c1c1c",
-      color: "#ffffff",
-      colorInvert: "#f4f4f3",
-      switchBg: "linear-gradient(to bottom, #2b3347, #181d27)",
-      sunMoonBg: "#dee5f3",
+      bg: " rgb(117, 95, 88)",
+      bgInvert: "rgb(94, 64, 56)",
+      color: " rgb(252, 225, 217)",
+      colorInvert: " #f4f4f3",
+      colorIcons: "rgb(250, 176, 144)",
+      switchBg: "linear-gradient(to bottom, #301F12, #8F6C57)",
+      sunMoonBg: "rgb(243, 222, 222)",
       sunMoonShadow: "0 0 51px 0 #dee5f3",
-      darkSide: "#565c6b",
-      borderGradient: "linear-gradient(to bottom, #000000, #6c7384)",
+      darkSide: "rgb(88, 58, 34)",
     },
     transitions: {
       bottonWidth: "60%",

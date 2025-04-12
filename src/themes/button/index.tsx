@@ -27,8 +27,8 @@ export const AnimatedButton = () => {
   );
 };
 const Switch = styled.label`
-  width: 100px;
-  height: 45px;
+  width: 85px;
+  height: 35px;
   border-radius: 30px;
   cursor: pointer;
   background: ${({ theme }) => theme.colors.switchBg};
@@ -47,8 +47,8 @@ const Switch = styled.label`
 `;
 const Sunmoon = styled.span`
     position: absolute;
-    width: 37px;
-    height: 37px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: ${({ theme }) => theme.colors.sunMoonBg};
     box-shadow: ${({ theme }) => theme.colors.sunMoonShadow};

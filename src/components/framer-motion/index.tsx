@@ -27,6 +27,7 @@ export const HeartIcon = () => {
 
 const MotionHeart = styled(motion.create(FaHeart))`
   margin: 0 8px;
+  color: ${({ theme }) => theme.colors.colorIcons};
 `;
 
 interface AlertaProps {

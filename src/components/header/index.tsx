@@ -38,6 +38,7 @@ const Title = styled.div`
     font-family: "Imperial Script", cursive;
     font-weight: 400;
     font-size: 100px;
+    color: ${({ theme }) => theme.colors.colorIcons};
   }
   @media (max-width: 1280px){
     flex-direction: column-reverse;
@@ -65,6 +66,7 @@ const Icons = styled.div`
   & a {
     font-size: 25px;
     transition: all 0.3s ease-in-out;
+    color: ${({ theme }) => theme.colors.colorIcons};
     &:hover {
       transform: scale(1.2);
     }
@@ -119,5 +121,5 @@ const Menu = styled.ul`
 const Button = styled.li`
   display: flex;
   justify-content: center;
-  margin-top: 15px;
+  
 `;

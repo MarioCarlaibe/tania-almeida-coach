@@ -119,6 +119,7 @@ const Icons = styled.div`
   & a {
     font-size: 30px;
     transition: all 0.3s ease-in-out;
+    color: ${({ theme }) => theme.colors.colorIcons};
     &:hover {
       transform: scale(1.2);
     }
