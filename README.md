@@ -1,54 +1,32 @@
-# React + TypeScript + Vite
+# 🌐 Projeto de Página Web com React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma página de internet desenvolvida utilizando **React** em conjunto com o **Vite** para um ambiente de desenvolvimento rápido e moderno.
 
-Currently, two official plugins are available:
+## 🛠️ Tecnologias e Bibliotecas Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**
+- **Vite**
+- **Styled Components**
+- **React Router Dom**
+- **ThemeProvider**
+- **Framer Motion**
 
-## Expanding the ESLint configuration
+## 💡 Funcionalidades
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Troca de temas (claro/escuro) utilizando o **ThemeProvider**, com personalização completa do layout e dos estilos.
+- Armazenamento do tema selecionado no **cache do navegador (localStorage)**.
+- Um formulário com **lógica de validação de campos**, incluindo:
+  - Verificação se todos os campos estão preenchidos.
+  - Validação de e-mail que exige o formato **contendo `@e1.com`**.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🤯 Dificuldades Encontradas
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Uma das principais dificuldades foi **armazenar corretamente o tema no cache do navegador** usando o `localStorage`, mantendo a preferência do usuário mesmo após atualizar ou sair da página.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🤖 Criação de Conteúdo
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+As **imagens** e **textos** utilizados no site foram gerados com a ajuda do **ChatGPT**, trazendo um conteúdo dinâmico e criativo para o projeto.
+
+## ✨ Animações
+
+O site conta com efeitos visuais criados com a biblioteca **Framer Motion**, deixando a experiência do usuário mais fluida e interativa.
